@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/dashboard"
+        android:title="Dashboard"
+        android:icon="@drawable/baseline_dashboard_24" />
+
+
+    <item
+        android:id="@+id/nav_happening"
+        android:title="Happenings"
+        android:icon="@drawable/happening" />
+
+
+    <item
+        android:id="@+id/nav_rms"
+        android:title="RMS"
+        android:icon="@drawable/rms" />
+
+    <item
+        android:id="@+id/nav_quiz"
+        android:title="Quick Quiz"
+        android:icon="@drawable/quiz_list_24" />
+
+</menu>
