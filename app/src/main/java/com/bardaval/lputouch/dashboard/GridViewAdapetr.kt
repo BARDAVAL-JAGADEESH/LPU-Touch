@@ -1,5 +1,7 @@
 package com.bardaval.lputouch.dashboard
+
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -36,6 +38,7 @@ class GridViewAdapter(
             holder = ViewHolder()
             holder.mImageView = myView.findViewById(R.id.imageView)
             holder.mTextView = myView.findViewById(R.id.textView)
+            holder.mBadgeTextView = myView.findViewById(R.id.badge)
             myView.tag = holder
         } else {
             myView = convertView
@@ -45,11 +48,26 @@ class GridViewAdapter(
         holder.mImageView.setImageResource(arrayListImage[position])
         holder.mTextView.text = name[position]
 
+        // Example logic to show badge
+        if (position % 2 == 0) {  // For example, show badge on every even position
+            holder.mBadgeTextView.text = "1"
+            holder.mBadgeTextView.visibility = View.VISIBLE
+        } else {
+            holder.mBadgeTextView.visibility = View.GONE
+        }
+
+        holder.mTextView.setOnClickListener {
+            val intent = Intent(context, GridItmesDeatailsActivity::class.java)
+            intent.putExtra("name", name[position])
+            context.startActivity(intent)
+        }
+
         return myView
     }
 
     private class ViewHolder {
         lateinit var mImageView: ImageView
         lateinit var mTextView: TextView
+        lateinit var mBadgeTextView: TextView
     }
 }

@@ -45,4 +45,12 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+
+
+    implementation ("androidx.recyclerview:recyclerview:1.3.1")
+    implementation ("pl.droidsonroids.gif:android-gif-drawable:1.2.29")
+
+
+    implementation ("androidx.cardview:cardview:1.0.0")
 }

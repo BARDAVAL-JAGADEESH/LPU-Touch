@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFE0B2" /> <!-- Light orange color -->
+    <corners android:radius="8dp" /> <!-- Rounded corners -->
+    <elevation android:radius="4dp"/> <!-- Optional: for card elevation -->
+</shape>

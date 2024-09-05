@@ -6,6 +6,7 @@
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:id="@+id/image"
+        android:background="@drawable/searchview"
         android:src="@mipmap/ic_launcher"/>
 
     <LinearLayout
@@ -18,8 +19,9 @@
             android:layout_height="wrap_content"
             android:id="@+id/textview1"
             android:text="Main"
-            android:textSize="20sp"
-            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_light"
+            android:textSize="15sp"
+            android:textColor="@color/black"
             android:layout_margin="5dp"
             android:clickable="true"
             android:focusable="true"/>

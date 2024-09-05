@@ -7,6 +7,7 @@ import androidx.appcompat.widget.SearchView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bardaval.lputouch.R
+import com.bardaval.lputouch.notfication.NotificationAdapter
 
 class Notification : AppCompatActivity() {
 
@@ -17,14 +18,6 @@ class Notification : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_notifiaction)
 
-        // Set up the toolbar with a back button
-        val toolbar = findViewById<androidx.appcompat.widget.Toolbar>(R.id.toolbar)
-        setSupportActionBar(toolbar)
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        toolbar.setNavigationOnClickListener {
-            onBackPressed()
-        }
-
         // Set up the RecyclerView
         notificationRecyclerView = findViewById(R.id.notification_recycler_view)
         notificationRecyclerView.layoutManager = LinearLayoutManager(this)
@@ -33,6 +26,7 @@ class Notification : AppCompatActivity() {
 
         // Set up the SearchView
         val searchView = findViewById<SearchView>(R.id.search_view)
+
         searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean {
                 return false

@@ -26,19 +26,24 @@ class HappeningFragment : Fragment() {
         val listView = view.findViewById<ListView>(R.id.myListView)
         val list = mutableListOf<Model>()
 
-        list.add(Model("If Employment Bears Hallmarks\n of Regular GovtServices.", "Bardaval", R.drawable.logolpu, "https://www.news18.com/news/"))
-        list.add(Model("Live", "Lpu Live", R.drawable.logolpu, "https://www.news18.com/news/"))
-        list.add(Model("Touch", "Lpu Touch", R.drawable.logolpu, "https://www.news18.com/"))
-        list.add(Model("Linkedin", "Linkedin", R.drawable.logolpu, "https://www.news18.com/"))
-        list.add(Model("Insta", "Instagram", R.drawable.logolpu, "https://www.news18.com/"))
-        list.add(Model("Facebook", "Facebook", R.drawable.logolpu, "https://www.news18.com/"))
-        list.add(Model("Twitter", "Twitter", R.drawable.logolpu, "https://www.news18.com/"))
-        list.add(Model("Github", "Bardaval", R.drawable.logolpu, "https://www.news18.com/"))
-        list.add(Model("Live", "Lpu Live", R.drawable.logolpu, "https://www.news18.com/"))
-        list.add(Model("Touch", "Lpu Touch", R.drawable.logolpu, "https://www.news18.com/"))
+        list.add(Model("24 LPU students participating in the Paris Olympics 2024", "", R.drawable.lpuolympic, "https://happenings.lpu.in/24-lpu-students-are-making-up-21-of-the-indian-contingent-at-the-parisolympics2024/"))
 
-        list.add(Model("Facebook", "Facebook", R.drawable.logolpu, "https://www.news18.com/"))
-        list.add(Model("Twitter", "Twitter", R.drawable.logolpu, "https://www.news18.com/"))
+        list.add(Model("LPU gives ₹25 lakh cash prize to Phogat", "", R.drawable.cashprize, "https://www.hindustantimes.com/cities/chandigarh-news/lpu-gives-25-lakh-cash-prize-to-phogat-101724953827031.html"))
+
+        list.add(Model("LPU NCC Cadet Navneet Singh represented India in the UK for YEP 2024", "", R.drawable.ncc, "https://happenings.lpu.in/lpu-ncc-cadet-navneet-singh-represented-india-in-the-uk-for-yep-2024/"))
+        list.add(Model("cash prizes to its students who represented India at the Paris Olympics. ", "", R.drawable.cashprize, "https://happenings.lpu.in/thousands-of-students-across-the-world-started-their-new-journey-with-enthusiasm-at-lpu/"))
+        list.add(Model("Thousands of students across the world started their new journey with enthusiasm at LPU", "", R.drawable.lpumam, "https://happenings.lpu.in/thousands-of-students-across-the-world-started-their-new-journey-with-enthusiasm-at-lpu/"))
+
+        list.add(Model("If Employment Bears Hallmarks\n of Regular GovtServices.", "", R.drawable.logolpu, "https://www.news18.com/news/"))
+        list.add(Model("LPU gives ₹25 lakh cash prize to Phogat", "Lpu Live", R.drawable.cashprize, "https://www.hindustantimes.com/cities/chandigarh-news/lpu-gives-25-lakh-cash-prize-to-phogat-101724953827031.html"))
+        list.add(Model("LPU strikes deals with Google, SAP, Oracle etc to offer free industry training to students!", "", R.drawable.amalpu, "https://www.lpu.in/latest-news.php"))
+        list.add(Model("LPU NCC Cadet Navneet Singh represented India in the UK for YEP 2024", "", R.drawable.ncc, "https://happenings.lpu.in/lpu-ncc-cadet-navneet-singh-represented-india-in-the-uk-for-yep-2024/"))
+        list.add(Model("Lovely Professional University (LPU) commenced its academic year 2024 with an engaging Freshman Induction Program", " ", R.drawable.cashprize, "https://happenings.lpu.in/thousands-of-students-across-the-world-started-their-new-journey-with-enthusiasm-at-lpu/"))
+        list.add(Model("Thousands of students across the world started their new journey with enthusiasm at LPU", "", R.drawable.lpumam, "https://happenings.lpu.in/thousands-of-students-across-the-world-started-their-new-journey-with-enthusiasm-at-lpu/"))
+        list.add(Model("LPU strikes deals with Google, SAP, Oracle etc to offer free industry training to students!", "", R.drawable.amalpu, "https://www.lpu.in/latest-news.php"))
+
+
+
 
         listView.adapter = Myarrayadapter(requireContext(), R.layout.listviewrow, list)
 

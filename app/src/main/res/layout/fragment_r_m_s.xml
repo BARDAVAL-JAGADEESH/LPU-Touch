@@ -1,14 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RMSFragment">
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <!-- Terms and Conditions CheckBoxes with orange color and orange tick -->
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I have not shared my UMS password with \nanyone"
+        android:textColor="@color/black"
+        android:buttonTint="@color/orange"
+        android:checked="true"
+        android:paddingTop="2dp"
+        android:buttonTintMode="src_in"/>
 
-</FrameLayout>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="I am responsible for the content typed in \nquery"
+        android:buttonTint="@color/orange"
+        android:checked="true"
+        android:paddingTop="2dp"
+        android:buttonTintMode="src_in"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="I understand that necessary disciplinary\n action can be initiated against me in case of \n use of derogatory words or false statements\n against any Student/Faculty/Staff/Higher\n Authority."
+        android:buttonTint="@color/orange"
+        android:checked="true"
+        android:paddingTop="2dp"
+        android:buttonTintMode="src_in"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="I agree to the terms and conditions"
+        android:buttonTint="@color/orange"
+        android:checked="true"
+        android:buttonTintMode="src_in"/>
+
+    <!-- Submit Button with orange color -->
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/orange"
+        android:layout_gravity="center"
+        android:background="@drawable/square_button_shape"
+        android:text="I agree "
+        android:textColor="@android:color/white"
+        android:layout_marginTop="24dp"/>
+
+
+</LinearLayout>

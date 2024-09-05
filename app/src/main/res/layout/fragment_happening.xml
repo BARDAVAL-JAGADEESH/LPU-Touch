@@ -9,6 +9,7 @@
         android:id="@+id/myListView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingStart="15dp"
         android:divider="@android:color/darker_gray"
         android:dividerHeight="1dp"/>
 
